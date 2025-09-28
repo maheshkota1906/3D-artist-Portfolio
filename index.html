@@ -179,32 +179,19 @@
             <section id="projects">
               <h3 class="section-heading">Projects</h3>
 
-              <!-- Royal Enfield Folder Card -->
+            
               <div class="portfolio-folders" style="text-align: center;">
+              <!-- Royal Enfield Folder Card -->
                 <div class="folder-card" onclick="openGallery('demo1')">
                   <img src="assets/images/RE_cover_image.png" alt="Royal Enfield">
                   <p>Royal Enfield Classic 350 (Click to View)</p>
                 </div>
-              
 
-                <!-- Folder 2 -->
-                <div class="folder-card" onclick="openGallery('project-2')">
-                  <img src="assets/images/RE_cover_image.png" alt="Project 2">
-                  <p>Second Project</p>
+                <!-- Cyber Tower Folder Card -->
+                <div class="folder-card" onclick="openGallery('demo2')">
+                  <img src="assets/images/CT_Cover_image.png" alt="Cyber Towers">
+                  <p>Cyber Towers Hyderabad (Click to View)</p>
                 </div>
-
-                <!-- Folder 3 -->
-                <div class="folder-card" onclick="openGallery('project-3')">
-                  <img src="assets/images/RE_cover_image.png" alt="Project 3">
-                  <p>Third Project</p>
-                </div>
-
-                <!-- Folder 4 -->
-                <div class="folder-card" onclick="openGallery('project-4')">
-                  <img src="assets/images/RE_cover_image.png" alt="Project 4">
-                  <p>Fourth Project</p>
-                </div>
-              </div>
 
               <!-- Lightbox Modal -->
               <div id="demo1" class="lightbox">
@@ -244,7 +231,27 @@
                 </p>
               </div>
 
+                <!-- Lightbox for Folder 2 -->
+                <div id="demo2" class="lightbox">
+                  <span class="close" onclick="closeGallery('demo2')">&times;</span>
+                  <div class="lightbox-content">
+                    <div class="slide active">
+                      <img src="assets/images/Cyber Towers/cybertowers.jpeg" alt="Cyber Towers">
+                      <div class="image-title">Cyber Towers Hyderabad</div>
+                   </div>
+                   <!--<div class="slide">
+                      <img src="assets/images/Cyber Towers/cybertowers.jpeg" alt="Cyber Towers 2">
+                   <div class="image-title">Cyber Towers - Night View</div>-->
+                 </div>
+               </div>
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               <!--<p class="video-description" style="text-align:center; font-size:16px; margin-top:15px; color:white;">
+                  "This project showcases my work on modeling and texturing the famous Cyber Towers building in Hyderabad..."
+               </p>-->
+             </div>
 
+              
               <!-- Profile Link -->
               <div class="profile-link">
                 <a href="https://www.artstation.com/maheshkota1906" target="_blank">
