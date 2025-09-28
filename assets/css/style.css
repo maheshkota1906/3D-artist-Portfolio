@@ -474,17 +474,64 @@ nav ul li a {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+/* Lightbox Grid for Multiple Images */
 .grid-gallery {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto; /* horizontal scroll */
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 15px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid-gallery .grid-item {
+  text-align: center;
 }
 
 .grid-gallery img {
-  flex: 0 0 auto;
-  width: 300px;   /* fixed width */
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  max-height: 280px;      
+  object-fit: cover;      
   border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+}
+
+.grid-gallery .image-title {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.folder-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* === Lightbox Gallery for Royal Enfield (demo1) === */
+.grid-gallery {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid-gallery img {
+  width: 100%;
+  max-height: 400px;   /* keeps them from being too tall */
+  object-fit: contain; /* keeps full image, no cropping */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
 }
