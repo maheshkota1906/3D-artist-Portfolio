@@ -426,7 +426,7 @@ nav ul li a {
 }
 
 .folder-card img {
-  width: 100% !important;
+  width: 80% !important;
   height: 80% !important;
   object-fit: cover !important;
   flex: 1;
