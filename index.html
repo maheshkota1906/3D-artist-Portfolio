@@ -116,17 +116,38 @@
         background-color: #555;
       }
 
-      /* Software icons: match the evenly spaced Contact section */
-      #skills .software-skills {
+      /* Skills section: balanced personal/software layout */
+      #skills.skills-layout {
+        display: grid;
+        grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+        gap: 36px;
+        align-items: start;
         width: 100%;
-        margin-top: 28px;
-        clear: both;
+      }
+      #skills .personal-skills,
+      #skills .software-skills {
+        min-width: 0;
+        padding: 24px;
+        background: #222;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 14px;
+        box-sizing: border-box;
+      }
+      #skills .personal-skills h4,
+      #skills .software-skills h4 {
+        margin-top: 0;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      #skills .personal-skills ul {
+        margin: 0;
+        padding-left: 20px;
+        line-height: 2;
       }
       #skills .software-grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 28px 18px;
-        width: 100%;
+        gap: 28px 16px;
         align-items: start;
         justify-items: center;
         text-align: center;
@@ -139,23 +160,26 @@
       #skills .software-item img {
         display: block;
         width: 100px;
+        max-width: 100%;
         height: 64px;
         object-fit: contain;
-        margin: 0 auto 12px;
+        margin: 0 auto 10px;
       }
       #skills .software-item .list-text {
         margin: 0;
-        text-align: center;
+        line-height: 1.4;
         overflow-wrap: anywhere;
       }
-      #skills #soft-title {
-        text-align: center;
-        margin-bottom: 28px;
+      @media (max-width: 800px) {
+        #skills.skills-layout {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 480px) {
         #skills .software-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 26px 14px;
+          gap: 24px 12px;
         }
       }
 
@@ -408,78 +432,51 @@
         </div>
       </div>
 
-     <!-- Skills Section - Scrollsby -->
-     <div class="container">
-        <div class="row">
-          <h3 class="section-heading">My Skills</h3>
-          <div id="skills" class="section scrollspy">
-
-              <!-- Personal Skills -->
-              <div class="col l12 m12 s12">
-                  <div class="step-description">
-                      <div class="row">
-                          <h4>Personal</h4>
-                      </div>
-                      <div class="row">
-                          <ul>
-                              <li>Creativity</li>
-                              <li>Leadership</li>
-                              <li>Time Management</li>
-                              <li>Critical Thinking</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Software Skills -->
-              <div class="software-skills">
-                <h4 id="soft-title">Software</h4>
-                <div class="software-grid">
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
-                    <p class="list-text">Autodesk Maya</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
-                    <p class="list-text">Photoshop</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/substance-painter.png" alt="Substance 3D Painter">
-                    <p class="list-text">Substance Painter</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/unity.png" alt="Unity">
-                    <p class="list-text">Unity</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
-                    <p class="list-text">Unreal Engine</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/blender.png" alt="Blender">
-                    <p class="list-text">Blender</p>
-                  </div>
-                  <div class="software-item">
-                    <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
-                    <p class="list-text">Sketchfab</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Optional Arrow -->
-              <div class="wrap-around">
-                  <div class="arrow-down">
-                      <i class="large material-icons">arrow_drop_down</i>
-                  </div>
-              </div>
+     <!-- Skills Section -->
+      <div class="container">
+        <h3 class="section-heading">My Skills</h3>
+        <div id="skills" class="section scrollspy skills-layout">
+          <div class="personal-skills">
+            <h4>Personal Skills</h4>
+            <ul>
+              <li>Creativity</li>
+              <li>Leadership</li>
+              <li>Time Management</li>
+              <li>Critical Thinking</li>
+            </ul>
           </div>
 
-                <!-- Optional Arrow -->
-                <div class="wrap-around">
-                    <div class="arrow-down">
-                        <i class="large material-icons">arrow_drop_down</i>
-                    </div>
-                </div>
+          <div class="software-skills">
+            <h4 id="soft-title">Software</h4>
+            <div class="software-grid">
+              <div class="software-item">
+                <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
+                <p class="list-text">Autodesk Maya</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
+                <p class="list-text">Photoshop</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/substance-painter.png" alt="Substance 3D Painter">
+                <p class="list-text">Substance Painter</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/unity.png" alt="Unity">
+                <p class="list-text">Unity</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
+                <p class="list-text">Unreal Engine</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/blender.png" alt="Blender">
+                <p class="list-text">Blender</p>
+              </div>
+              <div class="software-item">
+                <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
+                <p class="list-text">Sketchfab</p>
+              </div>
             </div>
           </div>
         </div>
