@@ -292,6 +292,87 @@
           line-height: 1.75;
         }
       }
+
+      /* Projects showcase: image-first responsive grid (scoped to Projects only) */
+      #projects .portfolio-folders {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
+        gap: 22px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left !important;
+      }
+
+      #projects .folder-card {
+        display: block;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-align: left;
+        background: #1e1e1e;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+        transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      #projects .folder-card:hover {
+        transform: translateY(-5px);
+        border-color: #df4f30;
+        box-shadow: 0 10px 26px rgba(0,0,0,0.4);
+      }
+
+      #projects .folder-card img {
+        display: block;
+        width: 100% !important;
+        height: 240px !important;
+        margin: 0 !important;
+        object-fit: cover !important;
+        border-radius: 0;
+      }
+
+      #projects .folder-card p {
+        margin: 0;
+        padding: 14px 14px 16px;
+        color: #ededed;
+        font-family: "Oswald", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: left;
+      }
+
+      #projects .folder-card:hover p {
+        color: #df4f30;
+      }
+
+      @media screen and (max-width: 900px) {
+        #projects .portfolio-folders {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+        #projects .folder-card img {
+          height: 220px !important;
+        }
+      }
+
+      @media screen and (max-width: 520px) {
+        #projects .portfolio-folders {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        #projects .folder-card img {
+          height: auto !important;
+          aspect-ratio: 16 / 10;
+        }
+      }
     </style>
   </head>
 
@@ -359,21 +440,21 @@
             
               <div class="portfolio-folders" style="text-align: center;">
               <!-- Royal Enfield Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo1')">
+                <div class="folder-card" role="button" tabindex="0" aria-label="View Royal Enfield Classic 350 gallery" onclick="openGallery('demo1')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo1')}">
                   <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield">
-                  <p>Royal Enfield Classic 350 (Click to View)</p>
+                  <p>Royal Enfield Classic 350</p>
                 </div>
 
                 <!-- Cyber Tower Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo2')">
+                <div class="folder-card" role="button" tabindex="0" aria-label="View Cyber Towers Hyderabad gallery" onclick="openGallery('demo2')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo2')}">
                   <img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers">
-                  <p>Cyber Towers Hyderabad (Click to View)</p>
+                  <p>Cyber Towers Hyderabad</p>
                 </div>
 
                 <!-- Wall-E Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo3')">
+                <div class="folder-card" role="button" tabindex="0" aria-label="View WALL-E gallery" onclick="openGallery('demo3')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo3')}">
                   <img src="assets/images/Wall-E/Wall-E.png" alt="Wall-E">
-                  <p>WALL-E is Waste Allocation Load Lifter Earth-Class (Click to View)</p>
+                  <p>WALL-E — 3D Character Model</p>
                 </div>
 
               <!-- Lightbox Modal -->
