@@ -158,6 +158,74 @@
           gap: 26px 14px;
         }
       }
+
+      /* About Me: clean responsive profile card */
+      #about .about-card {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 32px;
+        background: linear-gradient(135deg, #242424 0%, #303030 100%);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+      }
+      #about .about-photo-wrap {
+        flex: 0 0 220px;
+      }
+      #about .about-photo {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.24);
+      }
+      #about .about-copy {
+        flex: 1;
+        min-width: 0;
+      }
+      #about .about-kicker {
+        margin: 0 0 10px;
+        color: #f0a04b;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      #about .about-copy p {
+        margin: 0 0 16px;
+        color: #f3f3f3;
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: left;
+      }
+      #about .about-copy p:last-child {
+        margin-bottom: 0;
+      }
+      @media (max-width: 700px) {
+        #about .about-card {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 22px;
+          padding: 22px;
+        }
+        #about .about-photo-wrap {
+          flex: none;
+          width: min(100%, 230px);
+          margin: 0 auto;
+        }
+        #about .about-photo {
+          aspect-ratio: 4 / 5;
+        }
+        #about .about-copy p {
+          font-size: 15px;
+          line-height: 1.75;
+        }
+      }
     </style>
   </head>
 
@@ -321,49 +389,24 @@
     </div>
 
       <!-- About section -->
-<div class="container">
-  <h3 class="section-heading">About Me</h3>
+      <div class="container">
+        <h3 class="section-heading">About Me</h3>
 
-  <div id="about" class="section scrollspy">
-    <div class="row">
-      <div class="col l12 m12 s12">
+        <div id="about" class="section scrollspy">
+          <div class="about-card">
+            <div class="about-photo-wrap">
+              <img class="about-photo" src="assets/images/profile.jpg" alt="Mahesh, 3D Artist" />
+            </div>
 
-        <p id="about-info" style="text-align: justify;">
-
-          <img id="owen-pic" class="hide-on-med-and-down"
-            src="assets/images/profile.jpg"
-            alt="MAHESH 3D Artist"
-            style="float: left; margin-right: 20px; width: 180px; border-radius: 10px;" />
-
-          <img id="owen-pic-3" class="hide-on-large-only"
-            src="assets/images/profile.jpg"
-            alt="MAHESH 3D Artist"
-            style="width: 100%; border-radius: 12px; margin-bottom: 20px;" />
-
-          I’m Durga Naga Mahesh, a passionate 3D artist with three years of hands-on
-          experience creating characters, props, and environments for games and
-          animations. I use Autodesk Maya for 3D modeling and Photoshop for
-          texturing, with a focus on creating both stylized and realistic assets
-          for real-time applications.
-
-          <br><br>
-
-          My work focuses on clean topology, UV mapping, texture baking, and
-          game-ready asset production. I enjoy creating detailed characters,
-          props, and environments that support gameplay and cinematic
-          experiences.
-
-          <br><br>
-
-          I’m focused on developing high-quality 3D assets with strong attention
-          to detail, visual quality, and efficient real-time workflows.
-
-        </p>
-
+            <div class="about-copy">
+              <p class="about-kicker">3D Artist · Environment Artist</p>
+              <p>I’m Durga Naga Mahesh, a passionate 3D artist with three years of hands-on experience creating characters, props, and environments for games and animations. I use Autodesk Maya for 3D modeling and Photoshop for texturing, with a focus on creating stylized and realistic assets for real-time applications.</p>
+              <p>My work focuses on clean topology, UV mapping, texture baking, and game-ready asset production. I enjoy creating detailed characters, props, and environments that support gameplay and cinematic experiences.</p>
+              <p>I’m focused on developing high-quality 3D assets with strong attention to detail, visual quality, and efficient real-time workflows.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
      <!-- Skills Section - Scrollsby -->
      <div class="container">
