@@ -253,7 +253,7 @@ nav ul li a {
 .contact-content a:hover,
 .contact-content a:focus {
   color: #ededed !important;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: inherit;
 }
 
