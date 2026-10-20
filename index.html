@@ -116,15 +116,15 @@
         background-color: #555;
       }
 
-      /* Skills section: balanced personal/software layout */
+      /* Skills section: game-development skill cards */
       #skills.skills-layout {
         display: grid;
-        grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
-        gap: 36px;
+        grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+        gap: 28px;
         align-items: start;
         width: 100%;
       }
-      #skills .personal-skills,
+      #skills .core-skills-panel,
       #skills .software-skills {
         min-width: 0;
         padding: 24px;
@@ -133,21 +133,50 @@
         border-radius: 14px;
         box-sizing: border-box;
       }
-      #skills .personal-skills h4,
+      #skills .core-skills-panel h4,
       #skills .software-skills h4 {
-        margin-top: 0;
-        margin-bottom: 24px;
+        margin: 0 0 24px;
         text-align: center;
       }
-      #skills .personal-skills ul {
+      #skills .core-skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      #skills .core-skill-card {
+        min-width: 0;
+        padding: 20px 14px;
+        background: #181818;
+        border: 1px solid rgba(255,255,255,0.10);
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+      #skills .core-skill-card:hover {
+        transform: translateY(-4px);
+        border-color: #df4f30;
+      }
+      #skills .core-skill-card i {
+        display: inline-block;
+        margin-bottom: 8px;
+        color: #df4f30;
+        font-size: 32px;
+      }
+      #skills .core-skill-card h5 {
+        margin: 4px 0 8px;
+        font-size: 1.1rem;
+        line-height: 1.3;
+      }
+      #skills .core-skill-card p {
         margin: 0;
-        padding-left: 20px;
-        line-height: 2;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        opacity: 0.85;
       }
       #skills .software-grid {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 28px 16px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px 12px;
         align-items: start;
         justify-items: center;
         text-align: center;
@@ -170,16 +199,25 @@
         line-height: 1.4;
         overflow-wrap: anywhere;
       }
-      @media (max-width: 800px) {
+      @media (max-width: 900px) {
         #skills.skills-layout {
           grid-template-columns: 1fr;
           gap: 24px;
         }
+        #skills .software-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
       }
-      @media (max-width: 480px) {
+      @media (max-width: 520px) {
+        #skills .core-skills-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+        #skills .core-skill-card {
+          padding: 16px 10px;
+        }
         #skills .software-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 24px 12px;
         }
       }
 
@@ -432,18 +470,54 @@
         </div>
       </div>
 
-     <!-- Skills Section -->
+     <!-- Skills Section: Game Development Skills -->
       <div class="container">
         <h3 class="section-heading">My Skills</h3>
         <div id="skills" class="section scrollspy skills-layout">
-          <div class="personal-skills">
-            <h4>Personal Skills</h4>
-            <ul>
-              <li>Creativity</li>
-              <li>Leadership</li>
-              <li>Time Management</li>
-              <li>Critical Thinking</li>
-            </ul>
+          <div class="core-skills-panel">
+            <h4>3D &amp; Game Development</h4>
+            <div class="core-skills-grid">
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">view_in_ar</i>
+                <h5>3D Modeling</h5>
+                <p>Creating detailed 3D models, props, and environment assets.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">texture</i>
+                <h5>Texturing</h5>
+                <p>UV mapping, texture baking, and PBR material workflows.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">speed</i>
+                <h5>Optimization</h5>
+                <p>Preparing assets for efficient real-time performance.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">inventory_2</i>
+                <h5>Game-Ready Assets</h5>
+                <p>Building clean, organized assets for real-time projects.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">map</i>
+                <h5>Level Design</h5>
+                <p>Arranging spaces, props, and pathways within 3D scenes.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">wb_sunny</i>
+                <h5>Lighting &amp; Post-Processing</h5>
+                <p>Setting up scene lighting and final visual presentation.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">view_in_ar</i>
+                <h5>VR Setup</h5>
+                <p>Preparing interactive 3D environments for VR experiences.</p>
+              </div>
+              <div class="core-skill-card">
+                <i class="material-icons" aria-hidden="true">public</i>
+                <h5>WebGL</h5>
+                <p>Presenting interactive 3D scenes in the browser.</p>
+              </div>
+            </div>
           </div>
 
           <div class="software-skills">
