@@ -554,4 +554,109 @@ nav ul li a {
   }
 }
 
+/* 3D Artwork Showcase */
+.portfolio-section {
+  display: block;
+  width: 100%;
+  min-height: auto;
+  padding: 40px 0 70px;
+  box-sizing: border-box;
+}
+
+.portfolio-section .section-title {
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.portfolio-folders {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.folder-card {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-width: 0;
+  padding: 0;
+  background: #1e1e1e;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.folder-card:hover {
+  transform: translateY(-5px);
+  border-color: #df4f30;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.folder-card img {
+  display: block;
+  width: 100% !important;
+  height: 240px !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.folder-card img:hover {
+  transform: none;
+}
+
+.folder-card h3 {
+  margin: 0;
+  padding: 14px 12px 4px;
+  color: #ededed;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  text-align: left;
+}
+
+.folder-card p {
+  margin: 0;
+  padding: 0 12px 15px;
+  color: #aaa;
+  font-size: 14px;
+  text-align: left;
+}
+
+.folder-card:hover p {
+  color: #df4f30;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-folders {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .folder-card img {
+    height: 220px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .portfolio-folders {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .folder-card img {
+    height: 250px !important;
+  }
+}
+
 
