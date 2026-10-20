@@ -1,7 +1,12 @@
 
 /* font-family: 'Noto Serif', serif;
 font-family: 'Oswald', sans-serif; */
-
+.contact-content a:hover,
+.contact-content a:focus {
+  color: #da0037 !important;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
 html, body {
   font-family: "Noto Serif", serif;
   font-size: 18px;
@@ -247,9 +252,9 @@ nav ul li a {
 
 .contact-content a:hover,
 .contact-content a:focus {
-  color: #da0037 !important;
-  text-decoration: underline;
-  font-size: 1.1em;
+  color: #ededed !important;
+  text-decoration: none;
+  font-size: inherit;
 }
 
 .page-footer {
