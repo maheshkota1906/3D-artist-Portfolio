@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <!-- responsive screen size viewport code-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore the portfolio of MAHESH, a 3D Artist specializing in 3D modeling, environments, props, texturing, and real-time 3D applications." />
+    <meta name="description" content="Explore the portfolio of MAHESH 3D Artist and Enterprise IT Specialist in the greater Twin Cities area of Minnesota" />
     <meta property="og:title" content="MAHESH 3D Artist" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/images/social-osz-pic.png" />
@@ -116,437 +116,73 @@
         background-color: #555;
       }
 
-      /* Skills section: technical skills first, software below */
-      #skills.skills-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
-        align-items: stretch;
-        width: 100%;
-      }
-      #skills .core-skills-panel,
-      #skills .software-skills {
-        width: 100%;
-        min-width: 0;
-        padding: 24px;
-        background: #222;
-        border: 1px solid rgba(255,255,255,0.12);
-        border-radius: 14px;
-        box-sizing: border-box;
-      }
-      #skills .core-skills-panel h4,
-      #skills .software-skills h4 {
-        margin: 0 0 24px;
-        text-align: center;
-      }
-      #skills .core-skills-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-      }
-      #skills .core-skill-card {
-        min-width: 0;
-        padding: 20px 14px;
-        background: #181818;
-        border: 1px solid rgba(255,255,255,0.10);
-        border-radius: 10px;
-        text-align: center;
-        transition: transform 0.2s ease, border-color 0.2s ease;
-      }
-      #skills .core-skill-card:hover {
-        transform: translateY(-4px);
-        border-color: #df4f30;
-      }
-      #skills .core-skill-card i {
-        display: inline-block;
-        margin-bottom: 8px;
-        color: #df4f30;
-        font-size: 32px;
-      }
-      #skills .core-skill-card h5 {
-        margin: 4px 0 8px;
-        font-size: 1.1rem;
-        line-height: 1.3;
-      }
-      #skills .core-skill-card p {
-        margin: 0;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        opacity: 0.85;
-      }
-      #skills .software-grid {
-        display: grid;
-        grid-template-columns: repeat(7, minmax(0, 1fr));
-        gap: 26px 16px;
-        align-items: start;
-        justify-items: center;
-        text-align: center;
-      }
-      #skills .software-item {
-        width: 100%;
-        min-width: 0;
-        text-align: center;
-      }
-      #skills .software-item img {
-        display: block;
-        width: 100px;
-        max-width: 100%;
-        height: 64px;
-        object-fit: contain;
-        margin: 0 auto 10px;
-      }
-      #skills .software-item .list-text {
-        margin: 0;
-        line-height: 1.4;
-        overflow-wrap: anywhere;
-      }
-      @media (max-width: 900px) {
-        #skills .core-skills-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-        #skills .software-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-      }
-      @media (max-width: 520px) {
-        #skills .core-skills-panel,
-        #skills .software-skills {
-          padding: 16px;
-        }
-        #skills .core-skills-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 10px;
-        }
-        #skills .core-skill-card {
-          padding: 16px 10px;
-        }
-        #skills .software-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      /* About Me: clean responsive profile card */
-      #about .about-card {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 32px;
-        background: linear-gradient(135deg, #242424 0%, #303030 100%);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 16px;
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
-      }
-      #about .about-photo-wrap {
-        flex: 0 0 220px;
-      }
-      #about .about-photo {
-        display: block;
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 12px;
-        border: 2px solid rgba(255, 255, 255, 0.24);
-      }
-      #about .about-copy {
-        flex: 1;
-        min-width: 0;
-      }
-      #about .about-kicker {
-        margin: 0 0 10px;
-        color: #f0a04b;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-      #about .about-copy p {
-        margin: 0 0 16px;
-        color: #f3f3f3;
-        font-size: 16px;
-        line-height: 1.8;
-        text-align: left;
-      }
-      #about .about-copy p:last-child {
-        margin-bottom: 0;
-      }
-      @media (max-width: 700px) {
-        #about .about-card {
-          flex-direction: column;
-          align-items: stretch;
-          gap: 22px;
-          padding: 22px;
-        }
-        #about .about-photo-wrap {
-          flex: none;
-          width: min(100%, 230px);
-          margin: 0 auto;
-        }
-        #about .about-photo {
-          aspect-ratio: 4 / 5;
-        }
-        #about .about-copy p {
-          font-size: 15px;
-          line-height: 1.75;
-        }
-      }
-
-      /* Portfolio redesign: editorial dark-studio project gallery */
-      #projects { --portfolio-accent: #df4f30; }
-      #projects .portfolio-intro {
-        max-width: 760px; margin: 0 auto 34px; color: #bdbdbd;
-        text-align: center; line-height: 1.7;
-      }
+      /* Dark Studio editorial project portfolio */
+      #projects { color: #f4f4f4; }
+      #projects .portfolio-intro { max-width: 720px; margin: 0 auto 34px; color: #bdbdbd; line-height: 1.7; text-align: center; }
       #projects .project-category { margin: 42px 0 18px; text-align: left; }
-      #projects .project-category .eyebrow {
-        color: #df4f30; font-size: 12px; font-weight: 700;
-        letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px;
-      }
-      #projects .project-category h4 {
-        margin: 0; color: #f7f7f7; font-size: clamp(25px, 3vw, 36px);
-        line-height: 1.15; font-weight: 500;
-      }
-      #projects .project-category .category-note {
-        margin: 10px 0 0; color: #aaa; line-height: 1.6;
-      }
-      #projects .editorial-project-grid {
-        display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px; align-items: stretch;
-      }
-      #projects .editorial-project-card {
-        display: flex; flex-direction: column; min-width: 0; text-align: left;
-        padding: 0; margin: 0; border: 1px solid rgba(255,255,255,.10);
-        border-radius: 14px; overflow: hidden; background: #202020;
-        cursor: pointer; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-      }
-      #projects .editorial-project-card:hover {
-        transform: translateY(-5px); border-color: rgba(223,79,48,.8);
-        box-shadow: 0 16px 38px rgba(0,0,0,.28);
-      }
+      #projects .project-category .eyebrow { margin: 0 0 8px; color: #df4f30; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+      #projects .project-category h4 { margin: 0; color: #f7f7f7; font-size: clamp(25px, 3vw, 36px); line-height: 1.15; font-weight: 500; }
+      #projects .project-category .category-note { margin: 10px 0 0; color: #aaa; line-height: 1.6; }
+      #projects .editorial-project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+      #projects .editorial-project-card { display: flex; flex-direction: column; min-width: 0; text-align: left; padding: 0; margin: 0; border: 1px solid rgba(255,255,255,.10); border-radius: 14px; overflow: hidden; background: #202020; cursor: pointer; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+      #projects .editorial-project-card:hover { transform: translateY(-5px); border-color: rgba(223,79,48,.8); box-shadow: 0 16px 38px rgba(0,0,0,.28); }
       #projects .editorial-project-card.featured { grid-column: 1 / -1; }
       #projects .project-image-wrap { position: relative; overflow: hidden; background: #292929; }
-      #projects .project-image-wrap img {
-        display: block; width: 100%; height: 260px; object-fit: cover;
-        transition: transform .45s ease; border-radius: 0;
+      #projects .project-image-wrap img { display: block; width: 100%; height: 260px; object-fit: cover; transition: transform .45s ease; border-radius: 0; }
+      #projects .featured .project-image-wrap img { height: clamp(280px, 42vw, 480px); }
+      #projects .editorial-project-card:hover .project-image-wrap img { transform: scale(1.025); }
+      #projects .project-number { position: absolute; left: 18px; top: 18px; padding: 7px 10px; background: rgba(18,18,18,.86); color: #f4f4f4; font-size: 11px; letter-spacing: 1.5px; }
+      #projects .project-card-copy { padding: 22px 24px 24px; }
+      #projects .project-meta { margin: 0 0 8px; color: #df4f30; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+      #projects .project-card-copy h5 { margin: 0 0 10px; color: #fff; font-size: 23px; line-height: 1.3; }
+      #projects .project-card-copy p:not(.project-meta) { margin: 0; color: #bdbdbd; line-height: 1.65; }
+      #projects .project-view-link { display: inline-block; margin-top: 18px; color: #f4f4f4; font-weight: 600; }
+      #projects .project-view-link span { color: #df4f30; margin-left: 5px; }
+      #projects .learning-grid .project-image-wrap img { height: 250px; }
+      #projects .lightbox { box-sizing: border-box; }
+      #projects .lightbox-content { width: min(100%, 1000px); max-height: 88vh; overflow-y: auto; padding: 28px; box-sizing: border-box; }
+      #projects .lightbox-title { color: #fff; text-align: center; margin: 0 0 22px; }
+      #projects .project-detail-panel { max-width: 800px; margin: 0 auto 24px; color: #ddd; line-height: 1.7; }
+      #projects .project-detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+      #projects .project-detail-tags span { border: 1px solid #484848; border-radius: 20px; padding: 6px 11px; color: #eee; font-size: 12px; }
+      #projects .vertical-gallery img { display: block; width: min(100%, 900px); height: auto; object-fit: contain; margin: 0 auto 18px; }
+      #projects .project-placeholder-note { color: #aaa; font-size: 13px; }
+      @media (max-width: 650px) {
+        #projects .editorial-project-grid { grid-template-columns: 1fr; gap: 16px; }
+        #projects .editorial-project-card.featured { grid-column: auto; }
+        #projects .project-image-wrap img, #projects .featured .project-image-wrap img, #projects .learning-grid .project-image-wrap img { height: 230px; }
+        #projects .project-card-copy { padding: 18px; }
+        #projects .project-card-copy h5 { font-size: 20px; }
+        #projects .lightbox-content { padding: 16px; }
       }
-      #projects .featured .project-image-wrap img { height: clamp(280p              <h3 class="section-heading">Selected Projects</h3>
-              <p class="portfolio-intro">A selection of real-time training environments, industrial spaces, and personal 3D studies. Select a project to explore its visuals and details.</p>
 
-              <div class="project-category">
-                <p class="eyebrow">01 / Professional Work</p>
-                <h4>Professional Projects</h4>
-                <p class="category-note">VR training environments and industrial visualization work.</p>
-              </div>
+    </style>
+  </head>
 
-              <div class="editorial-project-grid">
-                <article class="editorial-project-card featured" onclick="openGallery('pro-fire')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-fire')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training.jpg" alt="Fire extinguisher VR training environment" loading="lazy">
-                    <span class="project-number">PROJECT 01</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">VR Training · Unity</p>
-                    <h5>Fire Extinguisher Training Environment</h5>
-                    <p>An industrial training scene designed around fire-safety equipment, warehouse props, and practical training spaces.</p>
-                    <span class="project-view-link">Explore project <span>↗</span></span>
-                  </div>
-                </article>
+<body>
+  <header>
 
-                <article class="editorial-project-card" onclick="openGallery('pro-lototo')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-lototo')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety.jpg" alt="LOTOTO electrical safety training environment" loading="lazy">
-                    <span class="project-number">PROJECT 02</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">Industrial Safety · 3D Environment</p>
-                    <h5>LOTOTO Electrical Safety</h5>
-                    <p>An electrical-room environment featuring cabinets, safety signage, and personal protective equipment areas.</p>
-                    <span class="project-view-link">Explore project <span>↗</span></span>
-                  </div>
-                </article>
+    <!-- Animated title -->
+    <section id="home">
+      <div class="container">
+        <div class="row heading">
+          <div class="col l6 m6 s6">
+            <h1 class="title">Durga naga<br>mahesh</h1>
+          </div>
+          <div class="col l6 m6 s6">
+            <h3 class="sub-title">3D Artist</h3>
+          </div>
+        </div>
+      </div>
 
-                <article class="editorial-project-card" onclick="openGallery('pro-warehouse')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-warehouse')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse.jpg" alt="Industrial factory and warehouse environment" loading="lazy">
-                    <span class="project-number">PROJECT 03</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">Environment Art · Industrial</p>
-                    <h5>Factory &amp; Warehouse Environments</h5>
-                    <p>Industrial storage spaces with shelving, pallets, cartons, and arranged environmental assets.</p>
-                    <span class="project-view-link">Explore project <span>↗</span></span>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Professional project detail galleries -->
-              <div id="pro-fire" class="lightbox" role="dialog" aria-modal="true" aria-label="Fire Extinguisher Training project details">
-                <span class="close" onclick="closeGallery('pro-fire')" aria-label="Close">&times;</span>
-                <div class="lightbox-content">
-                  <h3 class="lightbox-title">Fire Extinguisher Training Environment</h3>
-                  <div class="project-detail-panel">
-                    <p class="project-meta">VR Training · Unity · Environment Art</p>
-                    <p>A fire-safety training environment built around warehouse and indoor training scenarios. The scene focuses on equipment placement, readable safety spaces, and realistic industrial presentation.</p>
-                    <div class="project-detail-tags"><span>Environment Modeling</span><span>Materials &amp; Textures</span><span>Scene Setup</span><span>VR Training</span></div>
-                    <p class="project-placeholder-note">Add additional project views in this gallery when you have them available.</p>
-                  </div>
-                  <div class="vertical-gallery">
-                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training.jpg" alt="Fire extinguisher training environment overview">
-                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training 02.jpg" alt="Fire extinguisher training environment view 2" loading="lazy">
-                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training 03.jpg" alt="Fire extinguisher training environment view 3" loading="lazy">
-                  </div>
-                </div>
-              </div>
-
-              <div id="pro-lototo" class="lightbox" role="dialog" aria-modal="true" aria-label="LOTOTO project details">
-                <span class="close" onclick="closeGallery('pro-lototo')" aria-label="Close">&times;</span>
-                <div class="lightbox-content">
-                  <h3 class="lightbox-title">LOTOTO Electrical Safety</h3>
-                  <div class="project-detail-panel">
-                    <p class="project-meta">Industrial Safety · 3D Environment</p>
-                    <p>An electrical-room scene presenting electrical cabinets, safety labels, PPE storage, and industrial safety details for a training context.</p>
-                    <div class="project-detail-tags"><span>Environment Modeling</span><span>Industrial Props</span><span>Safety Signage</span><span>Lighting</span></div>
-                  </div>
-                  <div class="vertical-gallery">
-                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety.jpg" alt="LOTOTO electrical room overview">
-                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety 02.jpg" alt="LOTOTO electrical room view 2" loading="lazy">
-                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety 03.jpg" alt="LOTOTO electrical room view 3" loading="lazy">
-                  </div>
-                </div>
-              </div>
-
-              <div id="pro-warehouse" class="lightbox" role="dialog" aria-modal="true" aria-label="Factory and warehouse project details">
-                <span class="close" onclick="closeGallery('pro-warehouse')" aria-label="Close">&times;</span>
-                <div class="lightbox-content">
-                  <h3 class="lightbox-title">Factory &amp; Warehouse Environments</h3>
-                  <div class="project-detail-panel">
-                    <p class="project-meta">Industrial Environment Art</p>
-                    <p>A collection of warehouse and factory spaces focused on practical layouts, storage assets, surface materials, and scene composition.</p>
-                    <div class="project-detail-tags"><span>Environment Art</span><span>Props</span><span>Materials</span><span>Lighting</span></div>
-                  </div>
-                  <div class="vertical-gallery">
-                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse.jpg" alt="Industrial warehouse overview">
-                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse 02.jpg" alt="Industrial warehouse view 2" loading="lazy">
-                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse 03.jpg" alt="Industrial warehouse view 3" loading="lazy">
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-category">
-                <p class="eyebrow">02 / Personal &amp; Practice Work</p>
-                <h4>Learning Time Works</h4>
-                <p class="category-note">Personal projects and practice work created while developing 3D modeling and visualization skills.</p>
-              </div>
-
-              <div class="editorial-project-grid learning-grid">
-                <article class="editorial-project-card" onclick="openGallery('demo1')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo1')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield Classic 350 3D model" loading="lazy">
-                    <span class="project-number">STUDY 01</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">Hard-Surface Modeling</p>
-                    <h5>Royal Enfield Classic 350</h5>
-                    <p>Motorcycle modeling and presentation study.</p>
-                    <span class="project-view-link">View gallery <span>↗</span></span>
-                  </div>
-                </article>
-                <article class="editorial-project-card" onclick="openGallery('demo2')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo2')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers Hyderabad 3D visualization" loading="lazy">
-                    <span class="project-number">STUDY 02</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">Architectural Visualization</p>
-                    <h5>Cyber Towers Hyderabad</h5>
-                    <p>An architectural modeling and environment presentation study.</p>
-                    <span class="project-view-link">View gallery <span>↗</span></span>
-                  </div>
-                </article>
-                <article class="editorial-project-card" onclick="openGallery('demo3')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo3')}">
-                  <div class="project-image-wrap">
-                    <img src="assets/images/Wall-E/Wall-E.png" alt="WALL-E 3D model" loading="lazy">
-                    <span class="project-number">STUDY 03</span>
-                  </div>
-                  <div class="project-card-copy">
-                    <p class="project-meta">Character / Prop Modeling</p>
-                    <h5>WALL-E</h5>
-                    <p>A character modeling study with multiple views and a turntable video.</p>
-                    <span class="project-view-link">View gallery <span>↗</span></span>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Existing learning-work galleries retained -->
-              <!-- Lightbox Modal -->
-              <div id="demo1" class="lightbox">
-                <span class="close" onclick="closeGallery('demo1')">&times;</span>
-
-                <h3 class="lightbox-title">Royal Enfield Classic 350</h3>
-
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
-                  <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V01.jpg" alt="Royal Enfield 1">
-                  <div class="spacer"></div>
-                  <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield 2">
-                  <div class="spacer"></div>
-                  <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V03.jpg" alt="Royal Enfield 3">
-                </div>
-              </div>
-              <!-- Lightbox for Folder 2 -->
-              <div id="demo2" class="lightbox">
-                  <span class="close" onclick="closeGallery('demo2')">&times;</span>
-                  <h3 class="lightbox-title">Cyber Towers Hyderabad</h3>
-                  
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
-                  <img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers 1">
-                  <div class="spacer"></div>
-                  <img src="assets/images/Cyber Towers/cybertowersV02.jpeg" alt="Cyber Towers 2">
-                  <div class="spacer"></div>
-                  <img src="assets/images/Cyber Towers/cybertowersV03.jpeg" alt="Cyber Towers 3">
-                  <div class="spacer"></div> 
-                </div>
-              </div>
-              <!-- Lightbox for Folder 3 -->
-              <div id="demo3" class="lightbox">
-                  <span class="close" onclick="closeGallery('demo3')">&times;</span>
-                  <h3 class="lightbox-title">WALL-E is Waste Allocation Load Lifter Earth-Class</h3>
-                  
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
-                <div class="spacer"></div>  
-                <img src="assets/images/Wall-E/Wall-E.png" alt="Wall-E 1">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-Efront.png" alt="Wall-E 2">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-ESide.png" alt="Wall-E 3">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-EBack.png" alt="Wall-E 4">
-                <div class="spacer"></div>
-
-                <!-- ✅ Video inside vertical scroll -->
-                <div class="media-wrapper">
-                  <video class="gallery-media" controls autoplay muted loop playsinline>
-                    <source src="assets/images/Wall-E/Wall-Eturnable Video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-                <div class="spacer"></div>
-              </div>
-              </div>
-              
-
-              
-            
-
-              
-s</a></li>
+      <!-- Navigation bar -->
+      <div id="nav-wrapper">
+        <nav class="nav-center z-depth-0">
+          <ul id="nav-mobile">
+            <li><a href="#home" class="anchor">Home</a></li>
+            <li><a href="#explore" class="anchor">Explore</a></li>
+            <li><a href="#about" class="anchor">About</a></li>
+            <li><a href="#skills" class="anchor">Skills</a></li>
             <li><a href="#contact" class="anchor">Contact</a></li>
           </ul>
         </nav>
@@ -582,206 +218,233 @@ s</a></li>
           <div class="col l12 m12 s12">
             <!-- Portfolio Gallery Section -->
             <section id="projects">
-              <h3 class="section-heading">Projects</h3>
+              <h3 class="section-heading">Selected Projects</h3>
+              <p class="portfolio-intro">A selection of real-time training environments, industrial spaces, and personal 3D studies. Select a project to explore its visuals and details.</p>
 
-            
-              <div class="portfolio-folders" style="text-align: center;">
-              <!-- Royal Enfield Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo1')">
-                  <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield">
-                  <p>Royal Enfield Classic 350 (Click to View)</p>
+              <div class="project-category">
+                <p class="eyebrow">01 / Professional Work</p>
+                <h4>Professional Projects</h4>
+                <p class="category-note">VR training environments and industrial visualization work.</p>
+              </div>
+              <div class="editorial-project-grid">
+                <article class="editorial-project-card featured" onclick="openGallery('pro-fire')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-fire')}">
+                  <div class="project-image-wrap">
+                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training.jpg" alt="Fire extinguisher VR training environment" loading="lazy">
+                    <span class="project-number">PROJECT 01</span>
+                  </div>
+                  <div class="project-card-copy">
+                    <p class="project-meta">VR Training · Unity</p>
+                    <h5>Fire Extinguisher Training Environment</h5>
+                    <p>An industrial training scene focused on fire-safety equipment, warehouse props, and practical training spaces.</p>
+                    <span class="project-view-link">Explore project <span>↗</span></span>
+                  </div>
+                </article>
+                <article class="editorial-project-card" onclick="openGallery('pro-lototo')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-lototo')}">
+                  <div class="project-image-wrap">
+                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety.jpg" alt="LOTOTO electrical safety environment" loading="lazy">
+                    <span class="project-number">PROJECT 02</span>
+                  </div>
+                  <div class="project-card-copy">
+                    <p class="project-meta">Industrial Safety · 3D Environment</p>
+                    <h5>LOTOTO Electrical Safety</h5>
+                    <p>An electrical-room environment featuring cabinets, safety signage, and PPE areas.</p>
+                    <span class="project-view-link">Explore project <span>↗</span></span>
+                  </div>
+                </article>
+                <article class="editorial-project-card" onclick="openGallery('pro-warehouse')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('pro-warehouse')}">
+                  <div class="project-image-wrap">
+                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse.jpg" alt="Industrial factory and warehouse environment" loading="lazy">
+                    <span class="project-number">PROJECT 03</span>
+                  </div>
+                  <div class="project-card-copy">
+                    <p class="project-meta">Environment Art · Industrial</p>
+                    <h5>Factory &amp; Warehouse Environments</h5>
+                    <p>Industrial storage spaces with shelving, pallets, cartons, and arranged environmental assets.</p>
+                    <span class="project-view-link">Explore project <span>↗</span></span>
+                  </div>
+                </article>
+              </div>
+
+              <div id="pro-fire" class="lightbox" role="dialog" aria-modal="true" aria-label="Fire Extinguisher Training project details">
+                <span class="close" onclick="closeGallery('pro-fire')" aria-label="Close">&times;</span>
+                <div class="lightbox-content">
+                  <h3 class="lightbox-title">Fire Extinguisher Training Environment</h3>
+                  <div class="project-detail-panel"><p class="project-meta">VR Training · Unity · Environment Art</p><p>A fire-safety training environment built around warehouse and indoor training scenarios. The scene focuses on equipment placement, readable safety spaces, and realistic industrial presentation.</p><div class="project-detail-tags"><span>Environment Modeling</span><span>Materials &amp; Textures</span><span>Scene Setup</span><span>VR Training</span></div></div>
+                  <div class="vertical-gallery">
+                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training.jpg" alt="Fire extinguisher training environment overview">
+                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training 02.jpg" alt="Fire extinguisher training environment view 2" loading="lazy">
+                    <img src="assets/images/Professional Projects/Fire Extinguisher VR Training 03.jpg" alt="Fire extinguisher training environment view 3" loading="lazy">
+                  </div>
                 </div>
-
-                <!-- Cyber Tower Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo2')">
-                  <img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers">
-                  <p>Cyber Towers Hyderabad (Click to View)</p>
+              </div>
+              <div id="pro-lototo" class="lightbox" role="dialog" aria-modal="true" aria-label="LOTOTO Electrical Safety project details">
+                <span class="close" onclick="closeGallery('pro-lototo')" aria-label="Close">&times;</span>
+                <div class="lightbox-content">
+                  <h3 class="lightbox-title">LOTOTO Electrical Safety</h3>
+                  <div class="project-detail-panel"><p class="project-meta">Industrial Safety · Environment Art</p><p>An industrial electrical-room scene designed to communicate safety zones, electrical cabinets, PPE storage, and warning signage.</p><div class="project-detail-tags"><span>Environment Modeling</span><span>Props</span><span>Materials &amp; Textures</span><span>Safety Visualization</span></div></div>
+                  <div class="vertical-gallery">
+                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety.jpg" alt="LOTOTO electrical safety overview">
+                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety 02.jpg" alt="LOTOTO electrical safety view 2" loading="lazy">
+                    <img src="assets/images/Professional Projects/LOTOTO Electrical Safety 03.jpg" alt="LOTOTO electrical safety view 3" loading="lazy">
+                  </div>
                 </div>
-
-                <!-- Wall-E Folder Card -->
-                <div class="folder-card" onclick="openGallery('demo3')">
-                  <img src="assets/images/Wall-E/Wall-E.png" alt="Wall-E">
-                  <p>WALL-E is Waste Allocation Load Lifter Earth-Class (Click to View)</p>
+              </div>
+              <div id="pro-warehouse" class="lightbox" role="dialog" aria-modal="true" aria-label="Factory and Warehouse project details">
+                <span class="close" onclick="closeGallery('pro-warehouse')" aria-label="Close">&times;</span>
+                <div class="lightbox-content">
+                  <h3 class="lightbox-title">Factory &amp; Warehouse Environments</h3>
+                  <div class="project-detail-panel"><p class="project-meta">Industrial Environment Art</p><p>A collection of industrial storage spaces featuring pallets, shelving, cartons, and warehouse layouts.</p><div class="project-detail-tags"><span>Environment Modeling</span><span>Props</span><span>Materials &amp; Textures</span></div></div>
+                  <div class="vertical-gallery">
+                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse.jpg" alt="Industrial warehouse overview">
+                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse 02.jpg" alt="Industrial warehouse view 2" loading="lazy">
+                    <img src="assets/images/Professional Projects/Industrial Factory Warehouse 03.jpg" alt="Industrial warehouse view 3" loading="lazy">
+                  </div>
                 </div>
+              </div>
 
-              <!-- Lightbox Modal -->
+              <div class="project-category">
+                <p class="eyebrow">02 / Personal Studies</p>
+                <h4>Learning Time Works</h4>
+                <p class="category-note">Personal projects and practice work created while developing 3D art skills.</p>
+              </div>
+              <div class="editorial-project-grid learning-grid">
+                <article class="editorial-project-card" onclick="openGallery('demo1')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo1')}">
+                  <div class="project-image-wrap"><img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield Classic 350 3D model" loading="lazy"><span class="project-number">LEARNING 01</span></div>
+                  <div class="project-card-copy"><p class="project-meta">Hard-Surface Modeling</p><h5>Royal Enfield Classic 350</h5><p>A motorcycle modeling study focusing on form, details, and presentation.</p><span class="project-view-link">View gallery <span>↗</span></span></div>
+                </article>
+                <article class="editorial-project-card" onclick="openGallery('demo2')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo2')}">
+                  <div class="project-image-wrap"><img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers Hyderabad architectural visualization" loading="lazy"><span class="project-number">LEARNING 02</span></div>
+                  <div class="project-card-copy"><p class="project-meta">Architectural Visualization</p><h5>Cyber Towers Hyderabad</h5><p>An architectural visualization study of a recognizable Hyderabad landmark.</p><span class="project-view-link">View gallery <span>↗</span></span></div>
+                </article>
+                <article class="editorial-project-card" onclick="openGallery('demo3')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('demo3')}">
+                  <div class="project-image-wrap"><img src="assets/images/Wall-E/Wall-E.png" alt="WALL-E 3D model" loading="lazy"><span class="project-number">LEARNING 03</span></div>
+                  <div class="project-card-copy"><p class="project-meta">Character Modeling</p><h5>WALL-E</h5><p>A character modeling study presented with multiple views and a turntable video.</p><span class="project-view-link">View gallery <span>↗</span></span></div>
+                </article>
+              </div>
+
+              <!-- Existing learning-work galleries and video preserved -->
               <div id="demo1" class="lightbox">
                 <span class="close" onclick="closeGallery('demo1')">&times;</span>
-
-                <h3 class="lightbox-title">Royal Enfield Classic 350</h3>
-
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
+                <div class="lightbox-content vertical-gallery"><h3 class="lightbox-title">Royal Enfield Classic 350</h3>
                   <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V01.jpg" alt="Royal Enfield 1">
-                  <div class="spacer"></div>
                   <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V02.jpg" alt="Royal Enfield 2">
-                  <div class="spacer"></div>
                   <img src="assets/images/Royal Enfield/Royal Enfiled Classic 350 V03.jpg" alt="Royal Enfield 3">
                 </div>
               </div>
-              <!-- Lightbox for Folder 2 -->
               <div id="demo2" class="lightbox">
-                  <span class="close" onclick="closeGallery('demo2')">&times;</span>
-                  <h3 class="lightbox-title">Cyber Towers Hyderabad</h3>
-                  
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
+                <span class="close" onclick="closeGallery('demo2')">&times;</span>
+                <div class="lightbox-content vertical-gallery"><h3 class="lightbox-title">Cyber Towers Hyderabad</h3>
                   <img src="assets/images/Cyber Towers/cybertowersV01.jpeg" alt="Cyber Towers 1">
-                  <div class="spacer"></div>
                   <img src="assets/images/Cyber Towers/cybertowersV02.jpeg" alt="Cyber Towers 2">
-                  <div class="spacer"></div>
                   <img src="assets/images/Cyber Towers/cybertowersV03.jpeg" alt="Cyber Towers 3">
-                  <div class="spacer"></div> 
                 </div>
               </div>
-              <!-- Lightbox for Folder 3 -->
               <div id="demo3" class="lightbox">
-                  <span class="close" onclick="closeGallery('demo3')">&times;</span>
-                  <h3 class="lightbox-title">WALL-E is Waste Allocation Load Lifter Earth-Class</h3>
-                  
-              <!-- ✅ Vertical Scroll Content -->
-                <div class="lightbox-content vertical-gallery">
-                <div class="spacer"></div>  
-                <img src="assets/images/Wall-E/Wall-E.png" alt="Wall-E 1">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-Efront.png" alt="Wall-E 2">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-ESide.png" alt="Wall-E 3">
-                <div class="spacer"></div>
-
-                <img src="assets/images/Wall-E/Wall-EBack.png" alt="Wall-E 4">
-                <div class="spacer"></div>
-
-                <!-- ✅ Video inside vertical scroll -->
-                <div class="media-wrapper">
-                  <video class="gallery-media" controls autoplay muted loop playsinline>
-                    <source src="assets/images/Wall-E/Wall-Eturnable Video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                <span class="close" onclick="closeGallery('demo3')">&times;</span>
+                <div class="lightbox-content vertical-gallery"><h3 class="lightbox-title">WALL-E</h3>
+                  <img src="assets/images/Wall-E/Wall-E.png" alt="WALL-E 1">
+                  <img src="assets/images/Wall-E/Wall-Efront.png" alt="WALL-E 2">
+                  <img src="assets/images/Wall-E/Wall-ESide.png" alt="WALL-E 3">
+                  <img src="assets/images/Wall-E/Wall-EBack.png" alt="WALL-E 4">
+                  <div class="media-wrapper"><video class="gallery-media" controls muted loop playsinline><source src="assets/images/Wall-E/Wall-Eturnable Video.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
                 </div>
-                <div class="spacer"></div>
               </div>
-              </div>
-              
-
-              
-            
-
-              
-            <!-- Profile Link -->
-              <div class="profile-link">
-                <a href="https://www.artstation.com/maheshkota1906" target="_blank">
-                  🔗 View Full ArtStation Profile
-                </a>
-              </div>
+              <div class="profile-link"><a href="https://www.artstation.com/maheshkota1906" target="_blank" rel="noopener noreferrer">🔗 View Full ArtStation Profile</a></div>
             </section>
           </div>
         </div>
       </div>
     </div>
 
-      <!-- About section -->
+      <!-- About section - Scrollsby -->
       <div class="container">
         <h3 class="section-heading">About Me</h3>
-
         <div id="about" class="section scrollspy">
-          <div class="about-card">
-            <div class="about-photo-wrap">
-              <img class="about-photo" src="assets/images/profile.jpg" alt="Mahesh, 3D Artist" />
-            </div>
+          <div class="row">
+            <div class="col l12 m12 s12">
+              <p id="about-info" style="text-align: justify;">
+                <img id="owen-pic" class="hide-on-med-and-down" 
+                  src="assets/images/profile.jpg" 
+                  alt="MAHESH 3D Artist" 
+                  style="float: left; margin-right: 20px; width: 180px; border-radius: 10px;" />
+                
+                <img id="owen-pic-3" class="hide-on-large-only" 
+                  src="assets/images/profile.jpg" 
+                  alt="MAHESH 3D Artist" 
+                  style="width: 100%; border-radius: 12px; margin-bottom: 20px;" />
 
-            <div class="about-copy">
-              <p class="about-kicker">3D Artist · Environment Artist</p>
-              <p>I’m Durga Naga Mahesh, a passionate 3D artist with three years of hands-on experience creating characters, props, and environments for games and animations. I use Autodesk Maya for 3D modeling and Photoshop for texturing, with a focus on creating stylized and realistic assets for real-time applications.</p>
-              <p>My work focuses on clean topology, UV mapping, texture baking, and game-ready asset production. I enjoy creating detailed characters, props, and environments that support gameplay and cinematic experiences.</p>
-              <p>I’m focused on developing high-quality 3D assets with strong attention to detail, visual quality, and efficient real-time workflows.</p>
+                I'm Durga naga mahesh, I'm passionate 3D artist with one year of hands-on experience in creating characters, props, 
+                and environments for games and animations. Proficient in Autodesk Maya for 3D modeling and Photoshop for texturing,
+                I specialize in producing both stylized and realistic assets optimized for real-time applications. 
+                <br><br>
+
+                My work includes developing detailed characters with proper topology, designing props that enhance storytelling, 
+                and building immersive environments that support gameplay and cinematic sequences. I also have experience in UV mapping, 
+                baking maps, and creating clean textures that match the artistic direction of a project. With a solid understanding of 
+                game-ready asset production and a creative eye for detail,I aim to contribute high-quality visuals that bring projects to life.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-     <!-- Skills Section: Game Development Skills -->
-      <div class="container">
-        <h3 class="section-heading">My Skills</h3>
-        <div id="skills" class="section scrollspy skills-layout">
-          <div class="core-skills-panel">
-            <h4>3D &amp; Game Development</h4>
-            <div class="core-skills-grid">
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">view_in_ar</i>
-                <h5>3D Modeling</h5>
-                <p>Creating detailed 3D models, props, and environment assets.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">texture</i>
-                <h5>Texturing</h5>
-                <p>UV mapping, texture baking, and PBR material workflows.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">speed</i>
-                <h5>Optimization</h5>
-                <p>Preparing assets for efficient real-time performance.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">inventory_2</i>
-                <h5>Game-Ready Assets</h5>
-                <p>Building clean, organized assets for real-time projects.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">map</i>
-                <h5>Level Design</h5>
-                <p>Arranging spaces, props, and pathways within 3D scenes.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">wb_sunny</i>
-                <h5>Lighting &amp; Post-Processing</h5>
-                <p>Setting up scene lighting and final visual presentation.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">view_in_ar</i>
-                <h5>VR Setup</h5>
-                <p>Preparing interactive 3D environments for VR experiences.</p>
-              </div>
-              <div class="core-skill-card">
-                <i class="material-icons" aria-hidden="true">public</i>
-                <h5>WebGL</h5>
-                <p>Presenting interactive 3D scenes in the browser.</p>
+     <!-- Skills Section - Scrollsby -->
+     <div class="container">
+        <div class="row">
+          <h3 class="section-heading">My Skills</h3>
+          <div id="skills" class="section scrollspy">
+            
+            <!-- Personal Skills -->
+            <div class="col l7 m7 s12">
+              <div class="step-description">
+                <div class="row">
+                  <h4>Personal</h4>
+                </div>
+                <div class="row">
+                  <ul>
+                    <li>Creativity</li>
+                    <li>Leadership</li>
+                    <li>Time Management</li>
+                    <li>Critical Thinking</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="software-skills">
-            <h4 id="soft-title">Software</h4>
-            <div class="software-grid">
-              <div class="software-item">
-                <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
-                <p class="list-text">Autodesk Maya</p>
+            <!-- Software Skills -->
+            <div class="col l5 m5 s12">
+              <div class="row">
+                <h4 id="soft-title">Software</h4>
               </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
-                <p class="list-text">Photoshop</p>
+              <div class="row">
+                <div class="col l6 m6 s6">
+                  <div>
+                    <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya"
+                      style="width: 100px; height: auto;">
+                    <p class="list-text">Autodesk Maya</p>
+                  </div>
+                </div>
+                <div class="col l6 m6 s6">
+                  <div>
+                    <img class="skills" src="assets/images/photoshop.png" alt="Photoshop"
+                      style="width: 100px; height: auto;">
+                    <p class="list-text">Photoshop</p>
+                  </div>
+                </div>
+                <div class="col l6 m6 s6">
+                  <div>
+                    <img class="skills" src="assets/images/excel.png" alt="Excel"
+                      style="width: 100px; height: auto;">
+                    <p class="list-text">Excel</p>
+                  </div>
+                </div>
               </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/substance-painter.png" alt="Substance 3D Painter">
-                <p class="list-text">Substance Painter</p>
-              </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/unity.png" alt="Unity">
-                <p class="list-text">Unity</p>
-              </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
-                <p class="list-text">Unreal Engine</p>
-              </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/blender.png" alt="Blender">
-                <p class="list-text">Blender</p>
-              </div>
-              <div class="software-item">
-                <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
-                <p class="list-text">Sketchfab</p>
+
+              <!-- Optional Arrow -->
+              <div class="wrap-around">
+                <div class="arrow-down">
+                  <i class="large material-icons">arrow_drop_down</i>
+                </div>
               </div>
             </div>
           </div>
@@ -812,7 +475,7 @@ s</a></li>
                   <div class="row center-align"><i class="small material-icons">group</i></div>
                   <div class="row">
                     <h5 class="center-align c-labels">
-                      <a href="https://www.linkedin.com/in/kota-durga-naga-mahesh-a48562137/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                      <a href="https://www.linkedin.com/in/kota-durga-naga-mahesh-a48562137/?isSelfProfile=false" target="_blank">LINKEDIN</a>
                     </h5>
                   </div>
                 </div>
@@ -885,7 +548,6 @@ s</a></li>
         </div>
       </div>
     </div>
-    </div>
 
   <!-- Footer -->
   <footer class="page-footer">
@@ -895,8 +557,7 @@ s</a></li>
   <!--Javascript file-->
   <script src="assets/javascript/logic.js"></script>
   <script>
-    // Lightbox Script
-    let slideIndex = 0;
+    // Lightbox controls
     function openGallery(id) {
       const gallery = document.getElementById(id);
       if (!gallery) return;
@@ -910,7 +571,6 @@ s</a></li>
         document.body.style.overflow = "";
       }
     }
-
     document.addEventListener("keydown", function(event) {
       if (event.key === "Escape") {
         document.querySelectorAll(".lightbox").forEach(function(gallery) {
