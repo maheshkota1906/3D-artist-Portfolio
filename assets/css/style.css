@@ -56,8 +56,10 @@ p {
 
 .title {
   line-height: 0.9 !important;
-  font-size: 15vw !important;
+  font-size: clamp(4rem, 10vw, 9rem) !important;
   font-family: "Oswald", sans-serif;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .sub-title {
