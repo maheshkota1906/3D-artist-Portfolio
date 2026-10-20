@@ -116,30 +116,47 @@
         background-color: #555;
       }
 
-      /* Software icons: consistent grid layout */
+      /* Software icons: match the evenly spaced Contact section */
+      #skills .software-skills {
+        width: 100%;
+        margin-top: 28px;
+        clear: both;
+      }
       #skills .software-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px 12px;
-        align-items: start;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 28px 18px;
         width: 100%;
+        align-items: start;
+        justify-items: center;
         text-align: center;
       }
-      #skills .software-item { min-width: 0; text-align: center; }
+      #skills .software-item {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+      }
       #skills .software-item img {
         display: block;
-        width: 100px !important;
-        height: 80px;
+        width: 100px;
+        height: 64px;
         object-fit: contain;
-        margin: 0 auto 8px;
+        margin: 0 auto 12px;
       }
-      #skills .software-item p {
+      #skills .software-item .list-text {
         margin: 0;
         text-align: center;
         overflow-wrap: anywhere;
       }
-      @media (max-width: 480px) {
-        #skills .software-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #skills #soft-title {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+      @media (max-width: 600px) {
+        #skills .software-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 26px 14px;
+        }
       }
     </style>
   </head>
@@ -355,7 +372,7 @@
           <div id="skills" class="section scrollspy">
 
               <!-- Personal Skills -->
-              <div class="col l7 m7 s12">
+              <div class="col l12 m12 s12">
                   <div class="step-description">
                       <div class="row">
                           <h4>Personal</h4>
@@ -372,51 +389,38 @@
               </div>
 
               <!-- Software Skills -->
-              <div class="col l5 m5 s12">
-
-                  <div class="row">
-                      <h4 id="soft-title">Software</h4>
+              <div class="software-skills">
+                <h4 id="soft-title">Software</h4>
+                <div class="software-grid">
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
+                    <p class="list-text">Autodesk Maya</p>
                   </div>
-
-                  <div class="software-grid">
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
-                      <p class="list-text">Autodesk Maya</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
-                      <p class="list-text">Photoshop</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/substance-painter.png" alt="Substance Painter">
-                      <p class="list-text">Substance Painter</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/unity.png" alt="Unity">
-                      <p class="list-text">Unity</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
-                      <p class="list-text">Unreal Engine</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/blender.png" alt="Blender">
-                      <p class="list-text">Blender</p>
-                    </div>
-
-                    <div class="software-item">
-                      <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
-                      <p class="list-text">Sketchfab</p>
-                    </div>
-
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
+                    <p class="list-text">Photoshop</p>
                   </div>
-
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/substance-painter.png" alt="Substance 3D Painter">
+                    <p class="list-text">Substance Painter</p>
+                  </div>
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/unity.png" alt="Unity">
+                    <p class="list-text">Unity</p>
+                  </div>
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
+                    <p class="list-text">Unreal Engine</p>
+                  </div>
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/blender.png" alt="Blender">
+                    <p class="list-text">Blender</p>
+                  </div>
+                  <div class="software-item">
+                    <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
+                    <p class="list-text">Sketchfab</p>
+                  </div>
+                </div>
               </div>
 
               <!-- Optional Arrow -->
