@@ -116,16 +116,17 @@
         background-color: #555;
       }
 
-      /* Skills section: game-development skill cards */
+      /* Skills section: technical skills first, software below */
       #skills.skills-layout {
-        display: grid;
-        grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 28px;
-        align-items: start;
+        align-items: stretch;
         width: 100%;
       }
       #skills .core-skills-panel,
       #skills .software-skills {
+        width: 100%;
         min-width: 0;
         padding: 24px;
         background: #222;
@@ -140,7 +141,7 @@
       }
       #skills .core-skills-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 16px;
       }
       #skills .core-skill-card {
@@ -175,8 +176,8 @@
       }
       #skills .software-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 26px 12px;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 26px 16px;
         align-items: start;
         justify-items: center;
         text-align: center;
@@ -200,15 +201,18 @@
         overflow-wrap: anywhere;
       }
       @media (max-width: 900px) {
-        #skills.skills-layout {
-          grid-template-columns: 1fr;
-          gap: 24px;
+        #skills .core-skills-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
         #skills .software-grid {
           grid-template-columns: repeat(4, minmax(0, 1fr));
         }
       }
       @media (max-width: 520px) {
+        #skills .core-skills-panel,
+        #skills .software-skills {
+          padding: 16px;
+        }
         #skills .core-skills-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 10px;
