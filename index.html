@@ -115,6 +115,32 @@
       .profile-link a:hover {
         background-color: #555;
       }
+
+      /* Software icons: consistent grid layout */
+      #skills .software-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px 12px;
+        align-items: start;
+        width: 100%;
+        text-align: center;
+      }
+      #skills .software-item { min-width: 0; text-align: center; }
+      #skills .software-item img {
+        display: block;
+        width: 100px !important;
+        height: 80px;
+        object-fit: contain;
+        margin: 0 auto 8px;
+      }
+      #skills .software-item p {
+        margin: 0;
+        text-align: center;
+        overflow-wrap: anywhere;
+      }
+      @media (max-width: 480px) {
+        #skills .software-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
     </style>
   </head>
 
@@ -352,84 +378,42 @@
                       <h4 id="soft-title">Software</h4>
                   </div>
 
-                  <div class="row">
+                  <div class="software-grid">
 
-                      <!-- Autodesk Maya -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/Maya.png"
-                                   alt="Autodesk Maya"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Autodesk Maya</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/Maya.png" alt="Autodesk Maya">
+                      <p class="list-text">Autodesk Maya</p>
+                    </div>
 
-                      <!-- Photoshop -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/photoshop.png"
-                                   alt="Photoshop"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Photoshop</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/photoshop.png" alt="Photoshop">
+                      <p class="list-text">Photoshop</p>
+                    </div>
 
-                      <!-- Substance 3D Painter -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/substance-painter.png"
-                                   alt="Substance 3D Painter"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Substance Painter</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/substance-painter.png" alt="Substance Painter">
+                      <p class="list-text">Substance Painter</p>
+                    </div>
 
-                      <!-- Unity -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/unity.png"
-                                   alt="Unity"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Unity</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/unity.png" alt="Unity">
+                      <p class="list-text">Unity</p>
+                    </div>
 
-                      <!-- Unreal Engine -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/unreal-engine.png"
-                                   alt="Unreal Engine"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Unreal Engine</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/unreal-engine.png" alt="Unreal Engine">
+                      <p class="list-text">Unreal Engine</p>
+                    </div>
 
-                      <!-- Blender -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/blender.png"
-                                   alt="Blender"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Blender</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/blender.png" alt="Blender">
+                      <p class="list-text">Blender</p>
+                    </div>
 
-                      <!-- Sketchfab -->
-                      <div class="col l4 m4 s6">
-                          <div>
-                              <img class="skills"
-                                   src="assets/images/sketchfab.png"
-                                   alt="Sketchfab"
-                                   style="width: 100px; height: auto;">
-                              <p class="list-text">Sketchfab</p>
-                          </div>
-                      </div>
+                    <div class="software-item">
+                      <img class="skills" src="assets/images/sketchfab.png" alt="Sketchfab">
+                      <p class="list-text">Sketchfab</p>
+                    </div>
 
                   </div>
 
